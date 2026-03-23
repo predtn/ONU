@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 const steps = [
-  { title: 'Circle Up', desc: 'Players sit in a circle. The deck is shuffled and dealt.' },
-  { title: 'Play Cards', desc: 'Match colors or numbers. Strategic chaos ensues.' },
-  { title: 'Tension Builds', desc: 'As hands get smaller, the risk of losing grows.' },
-  { title: 'The Duel', desc: 'The last player must draw an Action Card.' },
-  { title: 'The Escape', desc: 'Use a Special Card to cancel or redirect the fate.' }
+  { title: 'Setup', desc: 'Deal 7 cards to each player. Reveal top card.' },
+  { title: 'Play Cards', desc: 'Play 1 valid card matching color, number, or action type.' },
+  { title: 'SOUL!', desc: 'Shout "SOUL!" when you have 1 card left, or draw 2 penalty.' },
+  { title: 'Winning', desc: 'First player to play all their cards wins the round.' },
+  { title: 'The Challenge', desc: 'The player with most cards remaining draws from Challenge Deck.' }
 ];
 
 const HowItWorks = () => {

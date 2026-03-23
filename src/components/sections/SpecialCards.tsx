@@ -4,36 +4,44 @@ import { Shield, Shuffle, Split, Zap, Star } from 'lucide-react';
 
 const specialCards = [
   { 
-    name: 'Shield', 
-    effect: 'Cancel Punishment', 
+    name: 'Give Me a Chance', 
+    effect: 'Cancel Challenge, Draw New', 
     color: 'bg-[#1A2E4B]', 
     accent: '#4D94FF',
-    icon: Shield,
+    icon: Shuffle,
     shadow: 'shadow-blue-900/40'
   },
   { 
-    name: 'Reverse', 
-    effect: 'Redirect Punishment', 
+    name: 'Oh Come On!', 
+    effect: 'Cancel Challenge, Pay Price', 
     color: 'bg-[#4B2E1A]', 
     accent: '#FF944D',
-    icon: Shuffle,
+    icon: Zap,
     shadow: 'shadow-orange-900/40'
   },
   { 
-    name: 'Split', 
-    effect: 'Split Actions', 
+    name: 'Lucky Guy', 
+    effect: 'Nullify Challenge Entirely', 
     color: 'bg-[#1A4B2E]', 
     accent: '#4DFF94',
-    icon: Split,
+    icon: Shield,
     shadow: 'shadow-green-900/40'
   },
   { 
-    name: 'Chaos', 
-    effect: 'Upgrade Consequences', 
+    name: 'That\'s Rough, Buddy', 
+    effect: 'Redirect Punishment', 
     color: 'bg-[#4B0F1A]', 
     accent: '#FF4D4D',
-    icon: Zap,
+    icon: Split,
     shadow: 'shadow-red-900/40'
+  },
+  { 
+    name: 'I\'m the King Now', 
+    effect: 'Redirect to Round Winner', 
+    color: 'bg-[#2C0E3A]', 
+    accent: '#B34DFF',
+    icon: Star,
+    shadow: 'shadow-purple-900/40'
   },
 ];
 
@@ -79,10 +87,10 @@ const SpecialCards = () => {
       <div className="container mx-auto px-6 md:px-12 text-center mb-16 relative z-10">
         <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Legendary Strategy</h2>
         <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">
-          The <span className="gold-gradient italic">Deus Ex</span> Cards
+          The <span className="gold-gradient italic">Phase Challenge</span> Cards
         </h3>
         <p className="text-white/40 max-w-2xl mx-auto text-sm md:text-base text-balance">
-          15 Special Strategy Cards that allow you to manipulate fate. 
+          Wild and Wild +4 cards each carry a hidden Phase Challenge ability printed on the card face. These activate when a round ends.
           The difference between a victory and a surrender.
         </p>
       </div>
@@ -131,14 +139,14 @@ const SpecialCards = () => {
       </div>
 
       <div className="container mx-auto px-6 md:px-12 mt-20">
-         <div className="p-1 border border-gold/20 max-w-2xl mx-auto relative z-10">
+          <div className="p-1 border border-gold/20 max-w-2xl mx-auto relative z-10">
             <div className="bg-white/5 border border-gold/10 p-6 md:p-8 text-center backdrop-blur-xl group hover:border-gold/30 transition-colors">
                <span className="bg-gold text-velvet-black px-3 py-1 text-[8px] font-black uppercase tracking-widest absolute -top-3 left-1/2 -translate-x-1/2">The Strategy</span>
                <p className="text-white/60 italic text-sm md:text-base leading-relaxed">
-                 "A well-timed Split card can turn a 1-on-1 interaction into a group chaos. A Shield can save your dignity. Use them wisely, for they are rare."
+                 "Hold these cards to flip the outcome after a round is lost — or burn them early to secure an easy win. The choice is yours."
                </p>
             </div>
-         </div>
+          </div>
       </div>
     </section>
   );

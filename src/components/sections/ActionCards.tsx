@@ -18,7 +18,7 @@ const levels = [
     intensity: 'Moderate Tension',
   },
   {
-    title: 'Level 3 – Hardcore',
+    title: 'Level 3 – Wild',
     description: 'High-stakes consequences for the most daring players. No turning back.',
     glow: 'shadow-[0_0_50px_rgba(127,29,29,0.5)]',
     border: 'border-wine-red/50',
@@ -37,10 +37,10 @@ const ActionCards = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div className="max-w-xl">
             <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Consequences</h2>
-            <h3 className="text-4xl md:text-6xl font-black uppercase leading-tight">Interaction <br /><span className="gold-gradient italic">Decks.</span></h3>
+            <h3 className="text-4xl md:text-6xl font-black uppercase leading-tight">Challenge <br /><span className="gold-gradient italic">Deck.</span></h3>
           </div>
           <p className="text-white/40 text-sm md:text-base max-w-sm mb-4">
-            24 Interaction Cards divided into three tiers of psychological and social tension.
+            Drawn by the round's loser. Challenges come in 3 levels of psychological and social tension.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const ActionCards = () => {
               </p>
 
               <div className="mt-auto w-full pt-8 border-t border-white/10 flex justify-between items-center">
-                <span className="text-[10px] text-white/30 uppercase tracking-widest font-bold">8 Cards Included</span>
+                <span className="text-[10px] text-white/30 uppercase tracking-widest font-bold">12 Cards per Level</span>
                 <button className="text-gold text-[10px] uppercase tracking-[0.2em] font-black hover:tracking-[0.3em] transition-all duration-300">Preview Deck →</button>
               </div>
 

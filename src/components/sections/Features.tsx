@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const features = [
-  { title: 'Perfect Icebreaker', desc: 'Skip the small talk. Go straight to the tension.' },
-  { title: 'Strategy + Drama', desc: 'Every card played is a calculated risk.' },
-  { title: 'Flirty but Safe', desc: 'Designed for consent and playful boundaries.' },
+  { title: 'YOUR SOUL IS MINE!', desc: 'The high-stakes penalty mechanic keeps everyone on edge.' },
+  { title: 'Strategy + Chaos', desc: 'Every action card played is a calculated risk.' },
+  { title: 'Dual-Function Wilds', desc: 'Phase Challenges can flip the round entirely.' },
   { title: 'Replayable Chaos', desc: 'No two nights are ever the same.' },
   { title: 'Premium Quality', desc: 'Luxurious textures and professional design.' }
 ];

@@ -22,22 +22,22 @@ const cardTypes = [
     shadow: 'shadow-blue-900/40'
   },
   { 
-    name: 'Purple', 
+    name: 'Green', 
     subtitle: 'Fantasy', 
-    color: 'bg-[#2C0E3A]', 
-    gradient: 'from-[#5A1D8B]', 
-    accent: '#B34DFF',
+    color: 'bg-[#1A4B2E]', 
+    gradient: 'from-[#2A7A4B]', 
+    accent: '#4DFF94',
     icon: Wand2,
-    shadow: 'shadow-purple-900/40'
+    shadow: 'shadow-green-900/40'
   },
   { 
-    name: 'Black', 
+    name: 'Yellow', 
     subtitle: 'Chaos', 
-    color: 'bg-[#0B0B0F]', 
-    gradient: 'from-[#2A2A2A]', 
-    accent: '#999999',
+    color: 'bg-[#4B4A0F]', 
+    gradient: 'from-[#8B881A]', 
+    accent: '#FFEA4D',
     icon: Zap,
-    shadow: 'shadow-black/60'
+    shadow: 'shadow-yellow-900/40'
   },
 ];
 
@@ -133,16 +133,16 @@ const Gameplay = () => {
       <div className="container mx-auto px-6 md:px-12 mt-20 text-center relative z-10">
         <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
           <div className="p-6 bg-white/5 border border-white/10 group hover:border-gold/30 transition-colors">
-            <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">53 Core Cards</h5>
-            <p className="text-white/40 text-sm">4 Colors (Passion, Trust, Fantasy, Chaos). Numbers 1-9 & Wilds.</p>
+            <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">68 Cards</h5>
+            <p className="text-white/40 text-sm">4 Colors (Red, Blue, Green, Yellow). Numbers 0-9 & Action Cards.</p>
           </div>
           <div className="p-6 bg-white/5 border border-white/10 group hover:border-gold/30 transition-colors">
             <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">Match & Play</h5>
-            <p className="text-white/40 text-sm">Just like classic UNO. Match by color or number to shed your hand.</p>
+            <p className="text-white/40 text-sm">Just like classic UNO. Match by color, number, or action to shed your hand.</p>
           </div>
           <div className="p-6 bg-white/5 border border-white/10 group hover:border-gold/30 transition-colors">
             <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">The Risk Is Real</h5>
-            <p className="text-white/40 text-sm">The last player standing with cards must draw from the Action Deck.</p>
+            <p className="text-white/40 text-sm">The player with the most cards remaining draws from the Challenge Deck.</p>
           </div>
         </div>
       </div>

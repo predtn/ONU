@@ -4,20 +4,20 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   { 
-    q: "Is it sexually explicit?", 
-    a: "No. The game is flirty, suggestive, and focused on social tension and playful dares. It is designed to be classy and fun, not pornographic." 
+    q: "What happens if I forget to say SOUL!?", 
+    a: "If you have exactly 1 card left and forget to call 'SOUL!', you must immediately draw 2 penalty cards." 
   },
   { 
     q: "How many players can play?", 
-    a: "Perfect for 4–6 players, but can be played with more if players team up. It's the ideal party size for meaningful interaction." 
+    a: "The game is designed perfectly for 2–6 players." 
   },
   { 
-    q: "Can someone refuse a card?", 
-    a: "Absolutely. We encourage setting house rules and boundaries before starting. The game includes 'Pause' and 'Safe' mechanics to ensure everyone stays comfortable." 
+    q: "Who draws the Challenge card?", 
+    a: "When a player empties their hand, they win the round. The player with the most cards remaining is the loser and must draw from the Challenge Deck." 
   },
   { 
-    q: "Is it safe for large parties?", 
-    a: "Yes! It's an excellent icebreaker for close groups of friends or couples looking to add some strategic fun to their gathering." 
+    q: "What are Phase Challenges?", 
+    a: "Phase Challenges are hidden abilities printed on Wild and Wild +4 cards. They activate when a round ends, allowing you to manipulate fate (like canceling a challenge or redirecting it)." 
   }
 ];
 

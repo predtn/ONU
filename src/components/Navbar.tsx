@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { OrderButton } from './OrderButton';
 
 const Navbar = () => {
   return (
@@ -12,8 +13,8 @@ const Navbar = () => {
         <div className="w-8 h-8 md:w-10 md:h-10 border-2 border-gold rotate-45 flex items-center justify-center">
           <span className="text-gold font-bold text-lg md:text-xl -rotate-45">18</span>
         </div>
-        <span className="font-heading text-xl md:text-2xl tracking-widest gold-gradient font-bold uppercase">
-          Velvet Dares
+        <span className="font-heading text-3xl md:text-4xl tracking-widest gold-gradient font-bold uppercase">
+          SOULX
         </span>
       </div>
 
@@ -24,9 +25,9 @@ const Navbar = () => {
         <a href="#faq" className="hover:text-gold transition-colors duration-300">FAQ</a>
       </div>
 
-      <button className="px-6 py-2 border border-gold/30 bg-gold/10 backdrop-blur-md text-gold text-xs md:text-sm uppercase tracking-widest font-bold hover:bg-gold hover:text-velvet-black transition-all duration-500 rounded-full">
+      <OrderButton className="px-6 py-2 border border-gold/30 bg-gold/10 backdrop-blur-md text-gold text-xs md:text-sm uppercase tracking-widest font-bold hover:bg-gold hover:text-velvet-black transition-all duration-500 rounded-full">
         Order Now
-      </button>
+      </OrderButton>
     </motion.nav>
   );
 };
