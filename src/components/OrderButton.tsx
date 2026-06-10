@@ -123,7 +123,7 @@ export const OrderButton = ({ children, className = '' }: OrderButtonProps) => {
               <div className="flex flex-col justify-center pr-0 sm:pr-4">
                 <p className="text-xs font-bold uppercase tracking-[0.34em] gold-gradient italic">Preorder limit</p>
                 <h3 className="mt-3 text-2xl font-black uppercase leading-tight text-white sm:text-3xl">
-                  Đặt hàng sớm
+                  Order sớm
                 </h3>
 
                 <div className="mt-5 rounded-md border border-white/10 bg-black/25 p-4">

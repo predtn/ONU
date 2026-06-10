@@ -29,7 +29,7 @@ const FAQ = () => {
       <div className="container mx-auto px-6 md:px-12 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Concerns?</h2>
-          <h3 className="text-4xl md:text-5xl font-black uppercase tracking-[0.2em]">Trước khi <span className="gold-gradient italic">Đặt hàng</span></h3>
+          <h3 className="text-4xl md:text-5xl font-black uppercase tracking-[0.2em]">Trước khi <span className="gold-gradient italic">Order</span></h3>
         </div>
 
         <div className="space-y-4">

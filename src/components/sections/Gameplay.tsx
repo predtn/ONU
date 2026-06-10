@@ -80,8 +80,8 @@ const Gameplay = () => {
   return (
     <section id="gameplay" className="py-24 md:py-40 bg-velvet-black/90 relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 text-center mb-16 relative z-10">
-        <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Lối chơi đơn giản</h2>
-        <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">Nhưng <span className="italic">Có gì đó rất đặc biệt</span></h3>
+        <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Lối chơi đơn quen thuộc</h2>
+        <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">Nhưng <span className="italic">lại có cảm giác rất mới lạ</span></h3>
         <p className="text-white/60 max-w-2xl mx-auto text-lg text-balance">
           Nếu đã chơi qua UNO, chắc chắn bạn sẽ thấy ngay sự quen thuộc. Nhưng đừng để vẻ ngoài đánh lừa bạn — mỗi lá bài đều có thể là một con dao hai lưỡi, và những thử thách sau mỗi vòng đấu sẽ khiến mọi quyết định trở nên căng thẳng hơn bao giờ hết.
         </p>

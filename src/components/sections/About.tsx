@@ -46,7 +46,7 @@ const About = () => {
                 <span className="text-gold font-heading font-bold italic">01</span>
               </div>
               <div>
-                <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-1">Đánh bài</h4>
+                <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-1">Chạy bài</h4>
                 <p className="text-white/40 text-sm">Chạy bài, phá nhau, đua thắng. Giữ hay đánh lá Wild là quyết định của bạn — và nó có giá của nó.</p>
               </div>
             </div>

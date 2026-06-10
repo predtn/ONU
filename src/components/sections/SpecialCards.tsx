@@ -85,9 +85,9 @@ const SpecialCards = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-royal-purple/10 to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 text-center mb-16 relative z-10">
-        <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Nơi tụ tập của những chiến thuật độc đáo</h2>
+        <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Nơi tụ tập của những chiến thuật não to</h2>
         <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">
-          Lá bài <span className="gold-gradient italic">Độc đắc</span> Nhất
+          Lá bài <span className="gold-gradient italic">Khác Biệt</span> Nhất
         </h3>
         <p className="text-white/40 max-w-2xl mx-auto text-sm md:text-base text-balance">
           Các lá bài Wild và Wild +4 đều có khả năng Thử thách Giai đoạn ẩn được in trên mặt bài. Khả năng này được kích hoạt khi một vòng đấu kết thúc.
