@@ -10,7 +10,7 @@ const levels = [
     intensity: 'Low Risk',
   },
   {
-    title: 'Level 2 – Làm tý căng thẳng, hơn đi',
+    title: 'Level 2 – Làm tý căng thẳng',
     description: 'Bắt đầu có tý căng thẳng rồi đấy. Những thử thách này sẽ khiến bạn phải suy nghĩ kỹ hơn, và có thể khiến bạn hơi đỏ mặt nếu chơi cùng bạn bè.',
     glow: 'shadow-[0_0_40px_rgba(239,68,68,0.3)]',
     border: 'border-red-500/30',
