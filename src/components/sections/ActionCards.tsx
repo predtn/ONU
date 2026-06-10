@@ -36,7 +36,7 @@ const ActionCards = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div className="max-w-xl">
-            <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Đối mặt với thử thách</h2>
+            <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Thử thách</h2>
             <h3 className="text-4xl md:text-6xl font-black uppercase leading-tight">Mức <br /><span className="gold-gradient italic">Thử thách.</span></h3>
           </div>
           <p className="text-white/40 text-sm md:text-base max-w-sm mb-4">

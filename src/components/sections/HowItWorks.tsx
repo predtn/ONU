@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const steps = [
   { title: 'Chuẩn bị', desc: 'Khởi đầu mỗi người 7 lá trong tay. Mở lá trên cùng bộ bài.' },
-  { title: 'Bắt đầu', desc: 'Đánh lá đầu tiên phù hợp với luật chơi UNO cổ điển.' },
+  { title: 'Lên bài', desc: 'Đánh lá đầu tiên phù hợp với luật chơi UNO cổ điển.' },
   { title: 'Ú Òa!', desc: '"Ú Òa!" sợ chưa, mình còn 1 lá thôi đó - hoặc là không mình quên hô rồi rút 2 lá phạt.' },
   { title: 'Chiến thắng', desc: 'Người chơi đầu tiên đánh hết tất cả bài của mình sẽ chiến thắng vòng đấu.' },
   { title: 'Thử thách', desc: 'Người chơi có nhiều lá bài còn lại nhất sẽ rút từ Bộ bài Thử thách - Nhưng sẽ ra sao khi người thua có lá đặc biệt trong tay nhỉ?.' }
@@ -14,7 +14,7 @@ const HowItWorks = () => {
        <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Vòng chơi</h2>
-          <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">Cách <span className="gold-gradient italic">Tương tác</span> với nhau</h3>
+          <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">Các <span className="gold-gradient italic">Tương tác</span> khi chơi</h3>
         </div>
 
         <div className="relative max-w-5xl mx-auto">
