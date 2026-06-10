@@ -52,7 +52,7 @@ export const OrderButton = ({ children, className = '' }: OrderButtonProps) => {
   }, [isOpen]);
 
   const platforms = [
-    { name: 'Facebook', href: '#', icon: MessageCircle, tone: 'hover:bg-[#1877f2]' },
+    { name: 'Facebook', href: 'https://www.facebook.com/people/SOUL-DECK/61590583856369/', icon: MessageCircle, tone: 'hover:bg-[#1877f2]' },
     { name: 'TikTok', href: '#', icon: Music2, tone: 'hover:bg-[#00f2ea]' },
     { name: 'Shopee', href: '#', icon: ShoppingBag, tone: 'hover:bg-[#ee4d2d]' },
   ];
