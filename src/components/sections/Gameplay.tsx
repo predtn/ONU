@@ -80,11 +80,10 @@ const Gameplay = () => {
   return (
     <section id="gameplay" className="py-24 md:py-40 bg-velvet-black/90 relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 text-center mb-16 relative z-10">
-        <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">The Mechanics</h2>
-        <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">Core <span className="italic">Gameplay</span></h3>
+        <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Lối chơi đơn giản</h2>
+        <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">Nhưng <span className="italic">Có gì đó rất đặc biệt</span></h3>
         <p className="text-white/60 max-w-2xl mx-auto text-lg text-balance">
-          Match colors, play your numbers, and use chaos to stay ahead. 
-          Simple to learn, dangerous to lose.
+          Nếu đã chơi qua UNO, chắc chắn bạn sẽ thấy ngay sự quen thuộc. Nhưng đừng để vẻ ngoài đánh lừa bạn — mỗi lá bài đều có thể là một con dao hai lưỡi, và những thử thách sau mỗi vòng đấu sẽ khiến mọi quyết định trở nên căng thẳng hơn bao giờ hết.
         </p>
       </div>
 
@@ -134,15 +133,15 @@ const Gameplay = () => {
         <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
           <div className="p-6 bg-white/5 border border-white/10 group hover:border-gold/30 transition-colors">
             <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">68 Cards</h5>
-            <p className="text-white/40 text-sm">4 Colors (Red, Blue, Green, Yellow). Numbers 0-9 & Action Cards.</p>
+            <p className="text-white/40 text-sm">4 Màu (Đỏ, Xanh, Xanh lá, Vàng). Số từ 0-9 & Thẻ Hành động.</p>
           </div>
           <div className="p-6 bg-white/5 border border-white/10 group hover:border-gold/30 transition-colors">
             <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">Match & Play</h5>
-            <p className="text-white/40 text-sm">Just like classic UNO. Match by color, number, or action to shed your hand.</p>
+            <p className="text-white/40 text-sm">Giống như UNO cổ điển. Ghép màu, số hoặc hành động để loại bỏ bài trong tay.</p>
           </div>
           <div className="p-6 bg-white/5 border border-white/10 group hover:border-gold/30 transition-colors">
             <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">The Risk Is Real</h5>
-            <p className="text-white/40 text-sm">The player with the most cards remaining draws from the Challenge Deck.</p>
+            <p className="text-white/40 text-sm">Người chơi có nhiều bài còn lại nhất - là người thua cuộc sẽ rút từ Bộ bài Thử thách.</p>
           </div>
         </div>
       </div>

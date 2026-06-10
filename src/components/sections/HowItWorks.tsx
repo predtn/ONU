@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 const steps = [
-  { title: 'Setup', desc: 'Deal 7 cards to each player. Reveal top card.' },
-  { title: 'Play Cards', desc: 'Play 1 valid card matching color, number, or action type.' },
-  { title: 'SOUL!', desc: 'Shout "SOUL!" when you have 1 card left, or draw 2 penalty.' },
-  { title: 'Winning', desc: 'First player to play all their cards wins the round.' },
-  { title: 'The Challenge', desc: 'The player with most cards remaining draws from Challenge Deck.' }
+  { title: 'Chuẩn bị', desc: 'Khởi đầu mỗi người 7 lá trong tay. Mở lá trên cùng bộ bài.' },
+  { title: 'Bắt đầu', desc: 'Đánh lá đầu tiên phù hợp với luật chơi UNO cổ điển.' },
+  { title: 'Ú Òa!', desc: '"Ú Òa!" sợ chưa, mình còn 1 lá thôi đó - hoặc là không mình quên hô rồi rút 2 lá phạt.' },
+  { title: 'Chiến thắng', desc: 'Người chơi đầu tiên đánh hết tất cả bài của mình sẽ chiến thắng vòng đấu.' },
+  { title: 'Thử thách', desc: 'Người chơi có nhiều lá bài còn lại nhất sẽ rút từ Bộ bài Thử thách - Nhưng sẽ ra sao khi người thua có lá đặc biệt trong tay nhỉ?.' }
 ];
 
 const HowItWorks = () => {
@@ -13,8 +13,8 @@ const HowItWorks = () => {
     <section className="py-24 md:py-40 bg-velvet-black relative">
        <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
-          <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">The Cycle</h2>
-          <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">How The <span className="gold-gradient italic">Round</span> Works</h3>
+          <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Vòng chơi</h2>
+          <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">Cách <span className="gold-gradient italic">Tương tác</span> với nhau</h3>
         </div>
 
         <div className="relative max-w-5xl mx-auto">

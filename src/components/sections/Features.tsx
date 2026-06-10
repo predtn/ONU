@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion';
 
 const features = [
-  { title: 'YOUR SOUL IS MINE!', desc: 'The high-stakes penalty mechanic keeps everyone on edge.' },
-  { title: 'Strategy + Chaos', desc: 'Every action card played is a calculated risk.' },
-  { title: 'Dual-Function Wilds', desc: 'Phase Challenges can flip the round entirely.' },
-  { title: 'Replayable Chaos', desc: 'No two nights are ever the same.' },
-  { title: 'Premium Quality', desc: 'Luxurious textures and professional design.' }
+  { title: 'Học trong 3 phút', desc: 'Luật nền quen như UNO — ai cũng vào được ngay, kể cả người lần đầu chơi board game.' },
+  { title: 'Mỗi ván là 1 clip TikTok tiềm năng', desc: '"Khi thằng thắng bị chuyển phạt ngược" — game tạo khoảnh khắc thật, không cần dàn dựng.' },
+  { title: 'Thuần Việt, chất Gen Z', desc: '"Ối dồi ôi", "Em đen lắm", "Vua là tôi không phải bạn" — ngôn ngữ trong bộ bài là của tụi mình, không phải bản dịch cứng từ game nước ngoài.' },
+  { title: 'Chiến thuật thật sự, không phải may rủi', desc: 'Giữ lá Wild để lật kèo cuối vòng, hay đánh sớm để thắng nhanh? Quyết định đó là của bạn — và cả bàn sẽ nhớ mãi.' },
 ];
 
 const Features = () => {
@@ -14,8 +13,8 @@ const Features = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/3">
-            <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Why Play</h2>
-            <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase leading-tight">Beyond The <span className="gold-gradient italic">Ordinary.</span></h3>
+            <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Tại sao lại chọn SOULDECK?</h2>
+            <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase leading-tight">Idea chưa từng có <span className="gold-gradient italic">Ở thị trường card games.</span></h3>
           </div>
           
           <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">

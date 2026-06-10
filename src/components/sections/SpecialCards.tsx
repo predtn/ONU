@@ -85,13 +85,13 @@ const SpecialCards = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-royal-purple/10 to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 text-center mb-16 relative z-10">
-        <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Legendary Strategy</h2>
+        <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Nơi tụ tập của những chiến thuật độc đáo</h2>
         <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">
-          The <span className="gold-gradient italic">Phase Challenge</span> Cards
+          Lá bài <span className="gold-gradient italic">Độc đắc</span> Nhất
         </h3>
         <p className="text-white/40 max-w-2xl mx-auto text-sm md:text-base text-balance">
-          Wild and Wild +4 cards each carry a hidden Phase Challenge ability printed on the card face. These activate when a round ends.
-          The difference between a victory and a surrender.
+          Các lá bài Wild và Wild +4 đều có khả năng Thử thách Giai đoạn ẩn được in trên mặt bài. Khả năng này được kích hoạt khi một vòng đấu kết thúc.
+          Sự khác biệt giữa chiến thắng và thất bại nằm ở chính khả năng này.
         </p>
       </div>
 
@@ -141,9 +141,9 @@ const SpecialCards = () => {
       <div className="container mx-auto px-6 md:px-12 mt-20">
           <div className="p-1 border border-gold/20 max-w-2xl mx-auto relative z-10">
             <div className="bg-white/5 border border-gold/10 p-6 md:p-8 text-center backdrop-blur-xl group hover:border-gold/30 transition-colors">
-               <span className="bg-gold text-velvet-black px-3 py-1 text-[8px] font-black uppercase tracking-widest absolute -top-3 left-1/2 -translate-x-1/2">The Strategy</span>
+               <span className="bg-gold text-velvet-black px-3 py-1 text-[8px] font-black uppercase tracking-widest absolute -top-3 left-1/2 -translate-x-1/2">Poker Face</span>
                <p className="text-white/60 italic text-sm md:text-base leading-relaxed">
-                 "Hold these cards to flip the outcome after a round is lost — or burn them early to secure an easy win. The choice is yours."
+                 "Hãy giữ những lá bài này để lật ngược tình thế sau khi thua một vòng đấu — hoặc sử dụng chúng sớm để đảm bảo chiến thắng dễ dàng. Sự lựa chọn là của bạn."
                </p>
             </div>
           </div>

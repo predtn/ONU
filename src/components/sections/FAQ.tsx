@@ -4,20 +4,20 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   { 
-    q: "What happens if I forget to say SOUL!?", 
-    a: "If you have exactly 1 card left and forget to call 'SOUL!', you must immediately draw 2 penalty cards." 
+    q: "Mấy người chơi được?", 
+    a: "2–6 người. Vui nhất từ 4 người trở lên, lý tưởng là 5–6." 
   },
   { 
-    q: "How many players can play?", 
-    a: "The game is designed perfectly for 2–6 players." 
+    q: "Bộ gồm những gì?", 
+    a: "68 lá Gameplay Deck + [X] lá Challenge Deck, đựng trong hộp cứng. Kích thước vừa túi xách, tiện mang theo." 
   },
   { 
-    q: "Who draws the Challenge card?", 
-    a: "When a player empties their hand, they win the round. The player with the most cards remaining is the loser and must draw from the Challenge Deck." 
+    q: "Pre-order có rủi ro không?", 
+    a: "Hoàn tiền 100% nếu không giao đúng cam kết. Thanh toán qua Shopee/MoMo/bank — có bảo vệ người mua." 
   },
   { 
-    q: "What are Phase Challenges?", 
-    a: "Phase Challenges are hidden abilities printed on Wild and Wild +4 cards. They activate when a round ends, allowing you to manipulate fate (like canceling a challenge or redirecting it)." 
+    q: "Giao khi nào?", 
+    a: "Dự kiến giữa tháng 6/2026. Tiến độ cập nhật liên tục qua fanpage và TikTok." 
   }
 ];
 
@@ -28,8 +28,8 @@ const FAQ = () => {
     <section id="faq" className="py-24 md:py-40 bg-velvet-black relative">
       <div className="container mx-auto px-6 md:px-12 max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Concerns</h2>
-          <h3 className="text-4xl md:text-5xl font-black uppercase tracking-[0.2em]">Common <span className="gold-gradient italic">Inquiries</span></h3>
+          <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Concerns?</h2>
+          <h3 className="text-4xl md:text-5xl font-black uppercase tracking-[0.2em]">Trước khi <span className="gold-gradient italic">Đặt hàng</span></h3>
         </div>
 
         <div className="space-y-4">

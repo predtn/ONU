@@ -31,13 +31,13 @@ const About = () => {
     <section id="about" ref={sectionRef} className="py-24 md:py-40 bg-velvet-black relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div ref={textRef}>
-          <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Experience Tension</h2>
+          <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Signature idea</h2>
           <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase leading-tight">
-            The Ultimate Game <br /> 
-            Of <span className="gold-gradient italic">Risks & Rewards.</span>
+            Căng não <br /> 
+            Giữa <span className="gold-gradient italic">Rủi ro & Phần thưởng</span>
           </h3>
           <p className="text-white/60 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-            A fast-paced card game where matching colors and numbers is just the surface. With special dual-function phase challenges and penalty rules, the stakes rise with every card played. Built for 2–6 players who aren't afraid of a little chaos.
+            Một party card game kết hợp giữa cơ chế đánh bài kiểu màu-số-action và hệ thống thử thách xã hội sau mỗi vòng chơi. Người chơi không chỉ cố gắng đánh hết bài trước, mà còn phải tính toán việc giữ lại các lá đặc biệt để can thiệp vào “Phase Thử Thách” sau khi vòng đấu kết thúc.
           </p>
           
           <div className="flex flex-col gap-6">
@@ -46,8 +46,8 @@ const About = () => {
                 <span className="text-gold font-heading font-bold italic">01</span>
               </div>
               <div>
-                <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-1">Strategic Foundation</h4>
-                <p className="text-white/40 text-sm">UNO-inspired mechanics that everyone knows, with a competitive twist.</p>
+                <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-1">Đánh bài</h4>
+                <p className="text-white/40 text-sm">Chạy bài, phá nhau, đua thắng. Giữ hay đánh lá Wild là quyết định của bạn — và nó có giá của nó.</p>
               </div>
             </div>
             
@@ -56,8 +56,8 @@ const About = () => {
                 <span className="text-gold font-heading font-bold italic">02</span>
               </div>
               <div>
-                <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-1">Interactive Consequences</h4>
-                <p className="text-white/40 text-sm">Win the round, or face the Challenge Deck. The intensity is in your hands.</p>
+                <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-1">Thử thách</h4>
+                <p className="text-white/40 text-sm">Người thua rút thử thách. Nhưng ai còn lá đặc biệt trong tay — cuộc chơi chưa kết thúc đâu.</p>
               </div>
             </div>
           </div>

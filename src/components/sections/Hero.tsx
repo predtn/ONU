@@ -20,7 +20,7 @@ const Hero = () => {
           className="mb-6"
         >
           <h1 className="text-5xl md:text-8xl font-black text-white leading-tight uppercase tracking-tighter">
-            YOUR <span className="gold-gradient italic">SOUL!</span> IS MINE.
+            Reveal the <span className="gold-gradient italic">Card</span> Feel the <span className="gold-gradient italic">Spark</span>
           </h1>
         </motion.div>
 
@@ -28,10 +28,10 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
-          className="text-lg md:text-2xl text-white/60 mb-10 max-w-2xl mx-auto font-light tracking-wide uppercase"
+          className="text-lg md:text-2xl text-white/60 mb-10 max-w-2xl mx-auto font-light tracking-wide"
         >
-          A color-matching card game for 2–6 players with a twist. 
-          <span className="block mt-2 font-bold text-gold/80 italic">Because losing isn't the end — it's the beginning of a challenge.</span>
+          Ván bài mà cả phòng không ai chịu thua
+          <span className="block mt-2 font-bold text-gold/80 italic">Thua là chưa kết thúc — Thua là khởi đầu của các thử thách mới</span>
         </motion.p>
 
         <motion.div
@@ -41,12 +41,12 @@ const Hero = () => {
           className="flex flex-col items-center gap-4"
         >
           <OrderButton className="group relative px-10 py-4 bg-gold text-velvet-black font-bold uppercase tracking-widest text-sm hover:scale-105 transition-all duration-300 rounded-sm overflow-hidden shadow-[0_0_30px_rgba(198,167,94,0.3)]">
-            <span className="relative z-10 pointer-events-none">Bring The Game Home</span>
+            <span className="relative z-10 pointer-events-none">Lên cho mình ngay bộ bài này</span>
             <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 pointer-events-none" />
           </OrderButton>
           
           <span className="text-[10px] md:text-xs text-white/30 uppercase tracking-[0.3em] font-semibold mt-2">
-            For Adults 18+ Only • 4–6 Players
+            Nội dung thử thách 18+ • 2-6 người chơi
           </span>
         </motion.div>
       </div>

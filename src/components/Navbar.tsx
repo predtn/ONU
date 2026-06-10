@@ -14,19 +14,19 @@ const Navbar = () => {
           <span className="text-gold font-bold text-lg md:text-xl -rotate-45">18</span>
         </div>
         <span className="font-heading text-3xl md:text-4xl tracking-widest gold-gradient font-bold uppercase">
-          SOULX
+          SOULDECK
         </span>
       </div>
 
       <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-medium text-white/70">
-        <a href="#about" className="hover:text-gold transition-colors duration-300">The Game</a>
-        <a href="#gameplay" className="hover:text-gold transition-colors duration-300">Gameplay</a>
-        <a href="#cards" className="hover:text-gold transition-colors duration-300">Cards</a>
+        <a href="#about" className="hover:text-gold transition-colors duration-300">Tổng quan</a>
+        <a href="#gameplay" className="hover:text-gold transition-colors duration-300">Cách chơi</a>
+        <a href="#cards" className="hover:text-gold transition-colors duration-300">Lá bài</a>
         <a href="#faq" className="hover:text-gold transition-colors duration-300">FAQ</a>
       </div>
 
       <OrderButton className="px-6 py-2 border border-gold/30 bg-gold/10 backdrop-blur-md text-gold text-xs md:text-sm uppercase tracking-widest font-bold hover:bg-gold hover:text-velvet-black transition-all duration-500 rounded-full">
-        Order Now
+        Pre-Order Now
       </OrderButton>
     </motion.nav>
   );
