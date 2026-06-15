@@ -39,7 +39,7 @@ export const OrderButton = ({ children, className = '' }: OrderButtonProps) => {
     seconds: '00',
   });
 
-  const deadline = useMemo(() => new Date('2026-06-15T23:59:59+07:00').getTime(), []);
+  const deadline = useMemo(() => new Date('2026-06-20T23:59:59+07:00').getTime(), []);
 
   useEffect(() => {
     const updateCountdown = () => {
