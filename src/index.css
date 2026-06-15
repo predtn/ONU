@@ -86,3 +86,12 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #4b0f1a;
 }
+
+/* Image sharpening utility */
+.sharp-img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}

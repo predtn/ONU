@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import souldeckImg from '../../../assets/souldeck.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,14 +66,14 @@ const About = () => {
 
         <div className="relative group">
           <div className="absolute -inset-4 bg-gold/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
-          <div className="relative border border-white/10 p-4 bg-white/5 backdrop-blur-sm">
+          <div className="backdrop-blur-sm">
              {/* Luxury Card Mockup Representation */}
-             <div className="aspect-[4/5] bg-gradient-to-br from-wine-red via-velvet-black to-royal-purple flex items-center justify-center p-8 relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/dark-leather.png')]" />
-                <div className="border-[12px] border-gold/20 w-full h-full flex flex-col items-center justify-center">
-                  <span className="text-gold/30 text-9xl font-heading font-black italic opacity-20">V</span>
-                  <div className="absolute bottom-8 text-gold uppercase tracking-[0.5em] font-bold text-xs">Premium Collection</div>
-                </div>
+             <div className="aspect-[4/5] flex items-center justify-center relative overflow-hidden">
+                <img 
+                  src={souldeckImg} 
+                  alt="Soul Deck Mockup" 
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
              </div>
              {/* Staggered overlapping "cards" */}
              <div className="absolute -bottom-8 -right-8 w-2/3 aspect-[4/5] bg-gold scale-95 -rotate-6 z-[-1] opacity-50 blur-sm" />

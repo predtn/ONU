@@ -1,47 +1,34 @@
 import { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform, animate } from 'framer-motion';
-import { Shield, Shuffle, Split, Zap, Star } from 'lucide-react';
+import imgHolyMoly from '../../../assets/wildcard_holymoly.png';
+import imgImKing from '../../../assets/wildcard x4_imking.png';
+import imgGiveMeAChance from '../../../assets/wildcard x4_givemeachance.png';
+import imgPoorYou from '../../../assets/wildcard_pooryou.png';
 
 const specialCards = [
   { 
     name: 'Give Me a Chance', 
-    effect: 'Cancel Challenge, Draw New', 
-    color: 'bg-[#1A2E4B]', 
     accent: '#4D94FF',
-    icon: Shuffle,
-    shadow: 'shadow-blue-900/40'
+    shadow: 'shadow-blue-900/40',
+    image: imgGiveMeAChance
   },
   { 
-    name: 'Oh Come On!', 
-    effect: 'Cancel Challenge, Pay Price', 
-    color: 'bg-[#4B2E1A]', 
-    accent: '#FF944D',
-    icon: Zap,
-    shadow: 'shadow-orange-900/40'
-  },
-  { 
-    name: 'Lucky Guy', 
-    effect: 'Nullify Challenge Entirely', 
-    color: 'bg-[#1A4B2E]', 
-    accent: '#4DFF94',
-    icon: Shield,
-    shadow: 'shadow-green-900/40'
-  },
-  { 
-    name: 'That\'s Rough, Buddy', 
-    effect: 'Redirect Punishment', 
-    color: 'bg-[#4B0F1A]', 
+    name: 'Holy Moly', 
     accent: '#FF4D4D',
-    icon: Split,
-    shadow: 'shadow-red-900/40'
+    shadow: 'shadow-red-900/40',
+    image: imgHolyMoly
   },
   { 
-    name: 'I\'m the King Now', 
-    effect: 'Redirect to Round Winner', 
-    color: 'bg-[#2C0E3A]', 
+    name: "I'm the King", 
     accent: '#B34DFF',
-    icon: Star,
-    shadow: 'shadow-purple-900/40'
+    shadow: 'shadow-purple-900/40',
+    image: imgImKing
+  },
+  { 
+    name: 'Poor You', 
+    accent: '#FFEA4D',
+    shadow: 'shadow-yellow-900/40',
+    image: imgPoorYou
   },
 ];
 
@@ -99,6 +86,9 @@ const SpecialCards = () => {
         ref={containerRef}
         className="relative h-[550px] w-full flex items-center justify-center perspective-[1200px] select-none"
       >
+        {/* Central Ambient Glow */}
+        <div className="absolute w-[600px] h-[600px] rounded-full bg-gold/5 blur-[120px] pointer-events-none z-0" />
+
         {/* Transparent Drag Layer on Top */}
         <motion.div
           drag="x"
@@ -154,7 +144,6 @@ const SpecialCards = () => {
 
 const SpecialCard = ({ card, index, smoothRotation, angleStep }: any) => {
   const radius = 420;
-  const CardIcon = card.icon;
   
   const rotateYValue = useTransform(smoothRotation, (v: number) => {
     return (index * angleStep) + v;
@@ -175,102 +164,98 @@ const SpecialCard = ({ card, index, smoothRotation, angleStep }: any) => {
   const zIndex = useTransform(z, (v: number) => Math.round(v + radius));
 
   return (
-    <motion.div
-      className={`absolute w-64 md:w-80 aspect-[4/6] bg-velvet-black border-[3px] border-gold/40 p-6 flex flex-col justify-between overflow-hidden shadow-2xl preserve-3d pointer-events-none select-none ${card.shadow}`}
-      style={{
-        x,
-        z,
-        scale,
-        opacity,
-        filter,
-        zIndex,
-        rotateY: 0,
-        willChange: 'transform, opacity, filter',
-      }}
-    >
-      {/* Background Technical Pattern (Sync with Gameplay) */}
-      <div 
-        className="absolute inset-0 opacity-[0.2]" 
-        style={{ 
-          backgroundImage: `radial-gradient(circle at 2px 2px, #D4AF37 1px, transparent 0)`,
-          backgroundSize: '24px 24px'
+    <>
+      {/* Background Aura Glow (3D tracked under the card) */}
+      <motion.div
+        className="absolute w-72 md:w-80 h-24 md:h-32 rounded-full filter blur-[50px] pointer-events-none select-none mix-blend-screen"
+        style={{
+          x,
+          y: useTransform(z, [-radius, radius], [180, 230]),
+          z,
+          scale: useTransform(z, [-radius, radius], [0.8, 1.2]),
+          opacity: useTransform(z, [-radius, radius], [0.15, 0.55]),
+          zIndex: useTransform(zIndex, (v) => v - 1),
+          background: `radial-gradient(ellipse at center, ${card.accent} 0%, transparent 70%)`,
         }}
       />
 
-      {/* Deus Ex Back Design */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gold/10 via-transparent to-gold/5" />
-      
-      {/* Floating Particles (Stardust) */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(4)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full"
-            style={{
-              width: Math.random() * 3 + 1,
-              height: Math.random() * 3 + 1,
-              backgroundColor: '#D4AF37',
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              opacity: 0.4,
-              filter: 'blur(1px)',
-            }}
-            animate={{
-              y: [0, -60, 0],
-              opacity: [0.1, 0.6, 0.1],
-              scale: [1, 2, 1],
-            }}
-            transition={{
-              duration: Math.random() * 4 + 3,
-              repeat: Infinity,
-              ease: "linear",
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-      </div>
+      <motion.div
+        className={`absolute w-60 md:w-72 aspect-[1/1.6] overflow-hidden rounded-2xl shadow-2xl preserve-3d pointer-events-none select-none ${card.shadow}`}
+        style={{
+          x,
+          z,
+          scale,
+          opacity,
+          filter,
+          zIndex,
+          rotateY: 0,
+          willChange: 'transform, opacity, filter',
+        }}
+      >
+        {/* Real Card Asset */}
+        <img 
+          src={card.image} 
+          alt={`${card.name} Card`}
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none sharp-img"
+        />
 
-      <div className="flex justify-between items-start relative z-10">
-        <Star size={24} color="#D4AF37" fill="#D4AF37" className="drop-shadow-[0_0_8px_rgba(212,175,55,0.6)]" />
-        <div className="w-10 h-10 border border-gold/40 rounded-xl flex items-center justify-center bg-gold/5 backdrop-blur-sm">
-          <span className="text-gold font-black text-xl italic">V</span>
-        </div>
-      </div>
+        {/* Inner Shadow / Vignette */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/25 z-[5]" />
 
-      <div className="text-center relative z-10 flex flex-col items-center">
-        {/* Central Emblem */}
-        <div className="relative mb-8">
-            <div className="absolute inset-0 bg-gold/20 blur-2xl rounded-full" />
-            <div className="relative w-32 h-32 border-2 border-gold/30 rounded-full flex items-center justify-center p-4">
-                <div className="w-full h-full border border-gold/40 rounded-full flex items-center justify-center">
-                    <CardIcon size={48} color="#D4AF37" strokeWidth={1} className="drop-shadow-[0_0_15px_rgba(212,175,55,0.5)]" />
-                </div>
-            </div>
-            
-            {/* Spinning decorative orbit */}
-            <motion.div 
-                className="absolute inset-[-10px] border border-dashed border-gold/20 rounded-full"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+        {/* Background Dotted Pattern */}
+        <div 
+          className="absolute inset-0 opacity-[0.12] z-10" 
+          style={{ 
+            backgroundImage: `radial-gradient(circle at 2px 2px, ${card.accent} 1px, transparent 0)`,
+            backgroundSize: '24px 24px'
+          }}
+        />
+
+        {/* Gloss shine */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 transition-opacity duration-500 z-20" />
+        
+        {/* Dynamic Energy Particles */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-15">
+          {[...Array(3)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute rounded-full"
+              style={{
+                width: Math.random() * 4 + 2,
+                height: Math.random() * 4 + 2,
+                backgroundColor: card.accent,
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                opacity: 0.3,
+                filter: 'blur(2px)',
+              }}
+              animate={{
+                y: [0, -40, 0],
+                opacity: [0.2, 0.5, 0.2],
+                scale: [1, 1.5, 1],
+              }}
+              transition={{
+                duration: Math.random() * 3 + 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: Math.random() * 2,
+              }}
             />
+          ))}
         </div>
 
-        <h4 className="text-gold text-2xl font-black uppercase tracking-[0.3em] mb-2">{card.name}</h4>
-        <div className="h-px w-12 bg-gold/40 mb-3" />
-        <p className="text-white/60 text-[10px] uppercase tracking-[0.5em] font-bold">{card.effect}</p>
-      </div>
-
-      <div className="flex justify-between items-end rotate-180 relative z-10">
-        <Star size={24} color="#D4AF37" fill="#D4AF37" className="drop-shadow-[0_0_8px_rgba(212,175,55,0.6)]" />
-        <div className="w-10 h-10 border border-gold/40 rounded-xl flex items-center justify-center bg-gold/5 backdrop-blur-sm">
-          <span className="text-gold font-black text-xl italic">V</span>
-        </div>
-      </div>
-
-      {/* Premium Border Inner (Thick gold border like About section) */}
-      <div className="absolute inset-0 border-[12px] border-gold/15 pointer-events-none" />
-      <div className="absolute inset-0 border border-gold/30 pointer-events-none" />
-    </motion.div>
+        {/* Inner frame with glow */}
+        <div 
+          className="absolute inset-0 border-[10px] border-white/5 pointer-events-none z-30 rounded-2xl" 
+          style={{ 
+            borderColor: `${card.accent}15` 
+          }} 
+        />
+        <div 
+          className="absolute inset-0 border border-white/10 pointer-events-none z-30 rounded-2xl" 
+        />
+      </motion.div>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import type { ChangeEvent, FormEvent } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Bell, MessageCircle, Music2, Send, ShoppingBag, X } from 'lucide-react';
+import souldeckOrderImg from '../../assets/souldeck_order.png';
 
 interface OrderButtonProps {
   children: React.ReactNode;
@@ -170,20 +171,13 @@ export const OrderButton = ({ children, className = '' }: OrderButtonProps) => {
               </button>
 
               <div className="rounded-md border border-white/10 bg-white/[0.03] p-3 sm:p-4">
-                <div className="flex aspect-[16/10] max-h-[32dvh] min-h-44 items-center justify-center rounded-sm border border-dashed border-gold/45 bg-[linear-gradient(135deg,rgba(198,167,94,0.08),rgba(75,15,26,0.18))] md:aspect-[4/5] md:max-h-none">
-                  <div className="w-3/4 max-w-56 space-y-3 sm:space-y-4">
-                    <div className="mx-auto h-8 w-2/3 rounded-sm border border-gold/40 sm:h-10" />
-                    <div className="h-20 rounded-sm border border-white/20 bg-white/[0.04] sm:h-28 md:h-32" />
-                    <div className="space-y-2">
-                      <div className="h-2 w-full rounded-full bg-white/20" />
-                      <div className="h-2 w-4/5 rounded-full bg-white/15" />
-                      <div className="h-2 w-2/3 rounded-full bg-white/10" />
-                    </div>
-                  </div>
+                <div className="flex aspect-[16/10] max-h-[32dvh] min-h-44 items-center justify-center rounded-sm overflow-hidden md:aspect-[4/5] md:max-h-none">
+                  <img
+                    src={souldeckOrderImg}
+                    alt="Soul Deck Product Packaging"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <p className="mt-3 text-center text-[10px] font-bold uppercase tracking-[0.24em] text-white/45 sm:tracking-[0.28em]">
-                  Product packaging wireframe
-                </p>
               </div>
 
               <div className="flex min-w-0 flex-col justify-center pr-0 md:pr-4">
