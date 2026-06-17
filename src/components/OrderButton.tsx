@@ -106,8 +106,8 @@ export const OrderButton = ({ children, className = '' }: OrderButtonProps) => {
       timestamp: new Date().toISOString(),
       source: 'order_modal',
       product: 'SOUL DECK preorder',
-      originalPrice: 200000,
-      preorderPrice: 120000,
+      originalPrice: 240000,
+      preorderPrice: 150000,
     };
 
     if (!googleScriptUrl) {
