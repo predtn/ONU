@@ -41,7 +41,7 @@ const Hero = () => {
           className="flex flex-col items-center gap-4"
         >
           <OrderButton className="group relative px-10 py-4 bg-gold text-velvet-black font-bold tracking-widest text-sm hover:scale-105 transition-all duration-300 rounded-sm overflow-hidden shadow-[0_0_30px_rgba(198,167,94,0.3)]">
-            <span className="relative z-10 pointer-events-none">Pre-order chỉ với 120.000 vnđ</span>
+            <span className="relative z-10 pointer-events-none">Pre-order chỉ với 150.000 vnđ</span>
             <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 pointer-events-none" />
           </OrderButton>
           
