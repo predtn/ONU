@@ -192,11 +192,11 @@ export const OrderButton = ({ children, className = '' }: OrderButtonProps) => {
                   <p className="text-xs uppercase tracking-[0.18em] text-white/45 sm:text-sm sm:tracking-[0.22em]">
                     Giá gốc
                   </p>
-                  <p className="mt-1 text-xl font-semibold text-white/40 line-through">200.000 VND</p>
+                  <p className="mt-1 text-xl font-semibold text-white/40 line-through">240.000 VND</p>
                   <p className="mt-3 text-xs uppercase tracking-[0.18em] gold-gradient italic sm:mt-4 sm:text-sm sm:tracking-[0.22em]">
                     Giá pre-order limit
                   </p>
-                  <p className="mt-1 text-3xl font-black text-white sm:text-4xl">120.000 VND</p>
+                  <p className="mt-1 text-3xl font-black text-white sm:text-4xl">150.000 VND</p>
                 </div>
 
                 <div className="mt-3 grid grid-cols-4 gap-1.5 sm:gap-2">
