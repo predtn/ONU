@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { OrderButton } from '../OrderButton';
 
 const Footer = () => {
   return (
@@ -20,10 +19,13 @@ const Footer = () => {
             <span className="gold-gradient italic">Bạn cũng vậy.</span>
           </h2>
           
-          <OrderButton className="group relative px-12 py-5 bg-gold text-velvet-black font-black uppercase tracking-[0.3em] text-sm hover:scale-105 transition-all duration-300 rounded-sm overflow-hidden shadow-[0_0_50px_rgba(198,167,94,0.3)] mb-12">
+          <button
+            onClick={() => { window.location.hash = '#order'; }}
+            className="group relative px-12 py-5 bg-gold text-velvet-black font-black uppercase tracking-[0.3em] text-sm hover:scale-105 transition-all duration-300 rounded-sm overflow-hidden shadow-[0_0_50px_rgba(198,167,94,0.3)] mb-12"
+          >
             <span className="relative z-10 pointer-events-none">Pre-order ngay thôi</span>
             <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 pointer-events-none" />
-          </OrderButton>
+          </button>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center border-t border-white/10 pt-16">

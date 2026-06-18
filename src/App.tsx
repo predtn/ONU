@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import SmoothScroll from './components/SmoothScroll';
 import GrainOverlay from './components/GrainOverlay';
 import Navbar from './components/Navbar';
@@ -10,23 +11,45 @@ import HowItWorks from './components/sections/HowItWorks';
 import Features from './components/sections/Features';
 import FAQ from './components/sections/FAQ';
 import Footer from './components/sections/Footer';
+import { OrderPage } from './pages/OrderPage';
 
 function App() {
+  const [isOrderPage, setIsOrderPage] = useState(false);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setIsOrderPage(window.location.hash === '#order');
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange(); // Initial check
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
   return (
     <SmoothScroll>
       <div className="relative bg-velvet-black text-white min-h-screen">
         <GrainOverlay />
-        <Navbar />
+        <Navbar isOrderPage={isOrderPage} />
         
         <main>
-          <Hero />
-          <About />
-          <Gameplay />
-          <ActionCards />
-          <SpecialCards />
-          <HowItWorks />
-          <Features />
-          <FAQ />
+          {isOrderPage ? (
+            <OrderPage />
+          ) : (
+            <>
+              <Hero />
+              <About />
+              <Gameplay />
+              <ActionCards />
+              <SpecialCards />
+              <HowItWorks />
+              <Features />
+              <FAQ />
+            </>
+          )}
         </main>
         
         <Footer />
