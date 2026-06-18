@@ -97,7 +97,7 @@ export const OrderPage = () => {
       paymentMethod: 'QR Code (Chuyển khoản)',
       totalAmount,
       timestamp: new Date().toISOString(),
-      source: 'order_page',
+      source: 'Web',
       product: 'SOUL DECK preorder',
       originalPrice,
       preorderPrice: unitPrice,
