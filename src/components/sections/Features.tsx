@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 
 const features = [
-  { title: 'Học trong 3 phút', desc: 'Luật nền quen như UNO — ai cũng vào được ngay, kể cả người lần đầu chơi board game.' },
-  { title: 'Mỗi ván là 1 clip TikTok tiềm năng', desc: '"Khi thằng thắng bị chuyển phạt ngược" — game tạo khoảnh khắc thật, không cần dàn dựng.' },
-  { title: 'Thuần Việt, chất Gen Z', desc: '"Ối dồi ôi", "Em đen lắm", "Vua là tôi không phải bạn" — ngôn ngữ trong bộ bài là của tụi mình, không phải bản dịch cứng từ game nước ngoài.' },
-  { title: 'Chiến thuật thật sự, không phải may rủi', desc: 'Giữ lá Wild để lật kèo cuối vòng, hay đánh sớm để thắng nhanh? Quyết định đó là của bạn — và cả bàn sẽ nhớ mãi.' },
+  { title: 'Học trong 3 phút', desc: 'Luật nền siêu dễ nuốt tựa như UNO. Giải thích nhoáng cái là cả hội quẩy được ngay, không cần cào phím đọc luật cả tiếng.' },
+  { title: 'Kho content triệu view', desc: 'Những pha "bẻ lái cực gắt" khi khứa về nhất lại bị đè ra phạt ngược. Toàn khoảnh khắc cười vỡ bụng, tha hồ lên xu hướng.' },
+  { title: 'Thuần Việt, chuẩn Gen Z', desc: 'Sở hữu loạt phát ngôn chất chơi như "Ối dồi ôi", "Nhân phẩm kém", "Thắng làm vua". Ngôn từ cực kỳ gần gũi chứ không dịch máy sượng trân.' },
+  { title: 'Đấu trí đỉnh cao', desc: 'Giấu lá bài cứu cánh để lật kèo phút 90 hay bung lụa sớm để kiếm cúp? Vui lòng suy nghĩ kỹ vì mọi người sẽ ghim bạn suốt cả buổi.' },
 ];
 
 const Features = () => {

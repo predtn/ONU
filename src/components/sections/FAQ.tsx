@@ -4,20 +4,20 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   { 
-    q: "Mấy người chơi được?", 
-    a: "2–6 người. Vui nhất từ 4 người trở lên, lý tưởng là 5–6." 
+    q: "Bao nhiêu mạng thì tụ họp chiến được?", 
+    a: "Từ 2 đến 6 người chơi nha. Cơ mà muốn thấy rõ độ 'tàn nhẫn' và tấu hài cực mạnh thì khuyên thật lòng nên gom đủ 4 đến 6 đứa." 
   },
   { 
-    q: "Bộ gồm những gì?", 
-    a: "68 lá Gameplay Deck + [X] lá Challenge Deck, đựng trong hộp cứng. Kích thước vừa túi xách, tiện mang theo." 
+    q: "Mở hộp ra thì có những gì thế?", 
+    a: "Nguyên combo gồm 68 lá bài Gameplay Deck siêu lầy lội và 32 lá bài Challenge Deck chất lừ, gói gọn trong hộp xịn mịn cứng cáp. Bỏ túi xách hay balo mang đi quẩy pub, đi cafe là hết sảy." 
   },
   { 
-    q: "Pre-order có rủi ro không?", 
-    a: "Hoàn tiền 100% nếu không giao đúng cam kết. Thanh toán qua Shopee/MoMo/bank — có bảo vệ người mua." 
+    q: "Pre-order liệu có bị 'bùng' tiền không?", 
+    a: "Yên tâm nha, uy tín quý hơn vàng! Hoàn tiền 100% không nói nhiều nếu không giao hàng đúng hẹn. Bạn được chọn thanh toán an toàn qua ngân hàng hoặc ví điện tử." 
   },
   { 
-    q: "Giao khi nào?", 
-    a: "Dự kiến giữa tháng 6/2026. Tiến độ cập nhật liên tục qua fanpage và TikTok." 
+    q: "Khi nào bài về tay để quẩy?", 
+    a: "Dự kiến bài sẽ cập bến nhà bạn vào giữa tháng 6/2026. Tiến độ in ấn và vận chuyển được spam liên tục trên Fanpage và TikTok chính thức của tụi mình nhé." 
   }
 ];
 

@@ -77,8 +77,7 @@ const SpecialCards = () => {
           Lá bài <span className="gold-gradient italic">Khác Biệt</span> Nhất
         </h3>
         <p className="text-white/40 max-w-2xl mx-auto text-sm md:text-base text-balance">
-          Các lá bài Wild và Wild +4 đều có khả năng Thử thách Giai đoạn ẩn được in trên mặt bài. Khả năng này được kích hoạt khi một vòng đấu kết thúc.
-          Sự khác biệt giữa chiến thắng và thất bại nằm ở chính khả năng này.
+          Bên dưới mỗi lá bài Wild và Wild +4 đều ẩn chứa "nội tại" cực hiểm hóc chỉ kích hoạt khi vòng đấu hạ màn. Khôn ngoan hay ăn quả đắng đều nằm ở cách bạn giữ những quân cờ tẩy này.
         </p>
       </div>
 
@@ -133,7 +132,7 @@ const SpecialCards = () => {
             <div className="bg-white/5 border border-gold/10 p-6 md:p-8 text-center backdrop-blur-xl group hover:border-gold/30 transition-colors">
                <span className="bg-gold text-velvet-black px-3 py-1 text-[8px] font-black uppercase tracking-widest absolute -top-3 left-1/2 -translate-x-1/2">Poker Face</span>
                <p className="text-white/60 italic text-sm md:text-base leading-relaxed">
-                 "Hãy giữ những lá bài này để lật ngược tình thế sau khi thua một vòng đấu — hoặc sử dụng chúng sớm để đảm bảo chiến thắng dễ dàng. Sự lựa chọn là của bạn."
+                 "Tích bài phòng thủ để lật kèo phút chót hay xả sớm để chạy trốn hình phạt? Chúc các khứa may mắn với sự lựa chọn của mình!"
                </p>
             </div>
           </div>

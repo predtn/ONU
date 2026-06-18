@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const levels = [
   {
     title: 'Level 1 – Nhẹ nhàng thôi',
-    description: 'Nhẹ nhàng tình cảm, thở phào nhẹ nhõm khi rút phải thử thách này. Một chút cười đùa, một chút xấu hổ, nhưng không quá căng thẳng.',
+    description: 'Bốc được thẻ này thì thở phào đi cưng. Thử thách siêu chill, tấu hài nhẹ nhàng, cùng lắm chỉ làm bạn hơi "quê" một chút thôi chứ chưa tổn thương sâu sắc đâu.',
     glow: 'shadow-[0_0_30px_rgba(168,85,247,0.3)]',
     border: 'border-purple-500/30',
     dot: 'bg-purple-500',
@@ -11,7 +11,7 @@ const levels = [
   },
   {
     title: 'Level 2 – Làm tý căng thẳng',
-    description: 'Bắt đầu có tý căng thẳng rồi đấy. Những thử thách này sẽ khiến bạn phải suy nghĩ kỹ hơn, và có thể khiến bạn hơi đỏ mặt nếu chơi cùng bạn bè.',
+    description: 'Bắt đầu nhiệt lên rồi đây! Mấy thử thách này sẽ bắt bạn phải đấu tranh nội tâm dữ dội, và chuẩn bị tinh thần đỏ mặt tía tai trước ánh nhìn phán xét từ lũ bạn thân.',
     glow: 'shadow-[0_0_40px_rgba(239,68,68,0.3)]',
     border: 'border-red-500/30',
     dot: 'bg-red-500',
@@ -19,7 +19,7 @@ const levels = [
   },
   {
     title: 'Level 3 – Ối dồi ôi',
-    description: 'Như tiêu đề đã nói, đây là cấp độ 18+. Những thử thách này sẽ khiến bạn phải đối mặt với những tình huống cực kỳ căng thẳng, có thể khiến bạn đỏ mặt, cười không ngớt, hoặc thậm chí là... cụ đi.',
+    description: 'Tầm này thì chơi tới bến, tới công chuyện luôn! Thử thách 18+ cực nặng đô sẽ đẩy bạn vào những tình huống chôn chân tại chỗ, cười nội thương, hoặc xấu hổ muốn độn thổ thực sự.',
     glow: 'shadow-[0_0_50px_rgba(127,29,29,0.5)]',
     border: 'border-wine-red/50',
     dot: 'bg-wine-red animate-pulse',
@@ -40,7 +40,7 @@ const ActionCards = () => {
             <h3 className="text-4xl md:text-6xl font-black uppercase leading-tight">Mức <br /><span className="gold-gradient italic">Thử thách.</span></h3>
           </div>
           <p className="text-white/40 text-sm md:text-base max-w-sm mb-4">
-            Người thua sẽ bốc bài - mức độ level nhận được tùy vào nhân phẩm của người bốc.
+            Bại binh làm gì có quyền lựa chọn, level thử thách bốc được hoàn toàn phụ thuộc vào hệ tâm linh và nhân phẩm của bạn.
           </p>
         </div>
 

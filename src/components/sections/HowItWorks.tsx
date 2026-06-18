@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 const steps = [
-  { title: 'Chuẩn bị', desc: 'Khởi đầu mỗi người 7 lá trong tay. Mở lá trên cùng bộ bài.' },
-  { title: 'Lên bài', desc: 'Đánh lá đầu tiên phù hợp với luật chơi UNO cổ điển.' },
-  { title: 'Ú Òa!', desc: '"Ú Òa!" sợ chưa, mình còn 1 lá thôi đó - hoặc là không mình quên hô rồi rút 2 lá phạt.' },
-  { title: 'Chiến thắng', desc: 'Người chơi đầu tiên đánh hết tất cả bài của mình sẽ chiến thắng vòng đấu.' },
-  { title: 'Thử thách', desc: 'Người chơi có nhiều lá bài còn lại nhất sẽ rút từ Bộ bài Thử thách - Nhưng sẽ ra sao khi người thua có lá đặc biệt trong tay nhỉ?.' }
+  { title: 'Phát bài', desc: 'Mỗi khứa chia đều 7 lá bài. Lật ngửa quân bài đầu tiên từ chồng bài chung để khai trận.' },
+  { title: 'Tác chiến', desc: 'Đánh lá bài cùng số hoặc cùng màu theo luật chơi UNO quốc dân để tẩu thoát.' },
+  { title: 'Ú Òa!', desc: 'Hét lên "Ú Òa!" khi còn đúng 1 lá. Quên hô mà bị phát hiện là ăn phạt rút ngay 2 lá nhé.' },
+  { title: 'Về đích', desc: 'Người đầu tiên xả sạch bài trên tay sẽ vỗ đùi đắc chí thắng vòng đấu.' },
+  { title: 'Chịu phạt', desc: 'Khứa nào giữ nhiều bài nhất sẽ phải bốc thẻ phạt thử thách. Trừ khi có bài cứu cánh lật kèo!' }
 ];
 
 const HowItWorks = () => {

@@ -38,7 +38,7 @@ const About = () => {
             Giữa <span className="gold-gradient italic">Rủi ro & Phần thưởng</span>
           </h3>
           <p className="text-white/60 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-            Một party card game kết hợp giữa cơ chế đánh bài kiểu màu-số-action và hệ thống thử thách xã hội sau mỗi vòng chơi. Người chơi không chỉ cố gắng đánh hết bài trước, mà còn phải tính toán việc giữ lại các lá đặc biệt để can thiệp vào “Phase Thử Thách” sau khi vòng đấu kết thúc.
+            Một chiếc card game "test độ lầy lội của đồng bọn" cực kỳ giải trí kết hợp giữa lối chơi tẩu bài quen thuộc và các thử thách "xã hội" siêu nhắng sau mỗi vòng. Ngoài việc cố gắng vứt hết bài trên tay để thoát nạn, bạn còn phải thủ sẵn những quân bài quyền lực để bẻ lái hình phạt sang đứa khác.
           </p>
           
           <div className="flex flex-col gap-6">
@@ -48,7 +48,7 @@ const About = () => {
               </div>
               <div>
                 <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-1">Chạy bài</h4>
-                <p className="text-white/40 text-sm">Chạy bài, phá nhau, đua thắng. Giữ hay đánh lá Wild là quyết định của bạn — và nó có giá của nó.</p>
+                <p className="text-white/40 text-sm">Chạy bài cực gắt, gài bẫy cực căng. Ôm bài hay xả lá Wild? Cứ giữ đi, tí bị phạt rồi biết mặt nhau.</p>
               </div>
             </div>
             
@@ -58,7 +58,7 @@ const About = () => {
               </div>
               <div>
                 <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-1">Thử thách</h4>
-                <p className="text-white/40 text-sm">Người thua rút thử thách. Nhưng ai còn lá đặc biệt trong tay — cuộc chơi chưa kết thúc đâu.</p>
+                <p className="text-white/40 text-sm">Kẻ thua cuộc phải rút thẻ phạt. Nhưng nếu bạn vẫn còn giữ bài cứu cánh? Lật ngược thế cờ và bắt chính đứa thắng phải chịu phạt!</p>
               </div>
             </div>
           </div>

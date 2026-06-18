@@ -86,7 +86,7 @@ const Gameplay = () => {
         <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-6">Lối chơi quen thuộc</h2>
         <h3 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-widest text-glow">Nhưng <span className="italic">lại có cảm giác rất mới lạ</span></h3>
         <p className="text-white/60 max-w-2xl mx-auto text-lg text-balance">
-          Nếu đã chơi qua UNO, chắc chắn bạn sẽ thấy ngay sự quen thuộc. Nhưng đừng để vẻ ngoài đánh lừa bạn — mỗi lá bài đều có thể là một con dao hai lưỡi, và những thử thách sau mỗi vòng đấu sẽ khiến mọi quyết định trở nên căng thẳng hơn bao giờ hết.
+          Luật chơi gốc siêu dễ nắm bắt nếu bạn đã từng chơi qua UNO quốc dân. Cơ mà đừng để vẻ "thân thiện" đó đánh lừa, vì mỗi nước đi đều có thể tự hủy, và chuỗi thử thách cuối trận sẽ mang lại những tràng cười rớt hàm và giúp cả hội xích lại gần nhau hơn.
         </p>
       </div>
 
@@ -138,16 +138,16 @@ const Gameplay = () => {
       <div className="container mx-auto px-6 md:px-12 mt-20 text-center relative z-10">
         <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
           <div className="p-6 bg-white/5 border border-white/10 group hover:border-gold/30 transition-colors">
-            <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">Many Cards</h5>
-            <p className="text-white/40 text-sm">4 Màu (Đỏ, Xanh, Xanh lá, Vàng). Số từ 0-9 & Thẻ Hành động.</p>
+            <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">Sắc màu rực rỡ</h5>
+            <p className="text-white/40 text-sm">4 tông màu cơ bản cực bắt mắt. Đầy đủ số từ 0-9 cùng dàn thẻ Action phá game cực đỉnh.</p>
           </div>
           <div className="p-6 bg-white/5 border border-white/10 group hover:border-gold/30 transition-colors">
-            <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">Match & Play</h5>
-            <p className="text-white/40 text-sm">Giống như UNO cổ điển. Ghép màu, số hoặc hành động để loại bỏ bài trong tay.</p>
+            <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">Đánh hay đẩy phạt</h5>
+            <p className="text-white/40 text-sm">Xếp chồng trùng màu, trùng số hoặc ném thẻ chức năng để tẩu tán đống bài trên tay nhanh nhất có thể.</p>
           </div>
           <div className="p-6 bg-white/5 border border-white/10 group hover:border-gold/30 transition-colors">
-            <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">The Risk Is Real</h5>
-            <p className="text-white/40 text-sm">Người chơi có nhiều bài còn lại nhất - là người thua cuộc sẽ rút từ Bộ bài Thử thách.</p>
+            <h5 className="text-gold font-bold mb-2 uppercase text-xs tracking-widest">Nhân phẩm quyết định</h5>
+            <p className="text-white/40 text-sm">Khứa nào ôm nhiều bài nhất khi có người về đích sẽ được đặc cách rút thẻ phạt thử thách.</p>
           </div>
         </div>
       </div>
