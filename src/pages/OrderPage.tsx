@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ShoppingBag, Send, CreditCard, ShieldCheck, Truck, MessageCircle, Music2, Lock, AlertTriangle, Check, CheckCircle2, XCircle, Clock, Link2 } from 'lucide-react';
+import { ArrowLeft, ShoppingBag, Send, ShieldCheck, Truck, CreditCard, MessageCircle, Music2, Lock, AlertTriangle, Check, CheckCircle2, XCircle, Clock, Link2 } from 'lucide-react';
 import souldeckOrderImg from '../../assets/souldeck_order.png';
 
 interface OrderForm {
@@ -35,14 +35,13 @@ const DEADLINE = new Date('2026-06-20T23:59:59+07:00').getTime();
 export const OrderPage = () => {
   const [form, setForm] = useState<OrderForm>(initialForm);
   const [formStatus, setFormStatus] = useState<FormStatus>('idle');
-  const [paymentMethod, setPaymentMethod] = useState<'cod' | 'qr'>('cod');
   const [paymentVerified, setPaymentVerified] = useState(false);
   const [checkingPayment, setCheckingPayment] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ days: '00', hours: '00', minutes: '00', seconds: '00' });
   const unitPrice = 150000;
   const originalPrice = 240000;
 
-  const isLocked = paymentMethod === 'qr' && paymentVerified;
+  const isLocked = paymentVerified;
 
   const deadline = useMemo(() => DEADLINE, []);
 
@@ -68,7 +67,7 @@ export const OrderPage = () => {
   useEffect(() => {
     setPaymentVerified(false);
     setCheckingPayment(false);
-  }, [paymentMethod, form.phone]);
+  }, [form.phone]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -94,7 +93,7 @@ export const OrderPage = () => {
       address: form.address,
       quantity: form.quantity,
       note: form.note,
-      paymentMethod: paymentMethod === 'qr' ? 'QR Code (Chuyển khoản)' : 'COD (Thanh toán khi nhận hàng)',
+      paymentMethod: 'QR Code (Chuyển khoản)',
       totalAmount,
       timestamp: new Date().toISOString(),
       source: 'order_page',
@@ -191,7 +190,7 @@ export const OrderPage = () => {
               </div>
               <div className="flex flex-col items-center justify-center p-4 rounded-lg border border-white/5 bg-white/[0.02] text-center">
                 <CreditCard className="h-5 w-5 text-gold mb-2" />
-                <span className="text-[10px] font-bold uppercase tracking-wider text-white/60">Thanh toán linh hoạt</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-white/60">Thanh toán nhanh chóng</span>
               </div>
               <div className="flex flex-col items-center justify-center p-4 rounded-lg border border-white/5 bg-white/[0.02] text-center">
                 <ShieldCheck className="h-5 w-5 text-gold mb-2" />
@@ -387,56 +386,8 @@ export const OrderPage = () => {
                   />
                 </div>
 
-                {/* Payment Methods */}
-                <div className="space-y-3">
-                  <label className="text-left block text-[10px] font-bold uppercase tracking-widest text-white/50">
-                    Phương thức thanh toán *
-                  </label>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <button
-                      type="button"
-                      onClick={() => setPaymentMethod('cod')}
-                      disabled={isLocked}
-                      className={`flex items-center gap-3 p-4 rounded-md border text-left transition-all disabled:opacity-40 disabled:cursor-not-allowed ${
-                        paymentMethod === 'cod'
-                          ? 'border-gold bg-gold/10 text-white'
-                          : 'border-white/10 bg-black/25 text-white/60 hover:border-white/25 hover:text-white'
-                      }`}
-                    >
-                      <Truck className={`h-5 w-5 ${paymentMethod === 'cod' ? 'text-gold' : ''}`} />
-                      <div>
-                        <p className="text-xs font-black uppercase tracking-wider">Thanh toán khi nhận (COD)</p>
-                        <p className="text-[10px] text-white/40 mt-0.5">Trả tiền mặt khi shipper giao hàng</p>
-                      </div>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setPaymentMethod('qr')}
-                      disabled={isLocked}
-                      className={`flex items-center gap-3 p-4 rounded-md border text-left transition-all disabled:opacity-40 disabled:cursor-not-allowed ${
-                        paymentMethod === 'qr'
-                          ? 'border-gold bg-gold/10 text-white'
-                          : 'border-white/10 bg-black/25 text-white/60 hover:border-white/25 hover:text-white'
-                      }`}
-                    >
-                      <CreditCard className={`h-5 w-5 ${paymentMethod === 'qr' ? 'text-gold' : ''}`} />
-                      <div>
-                        <p className="text-xs font-black uppercase tracking-wider">Quét mã QR chuyển khoản</p>
-                        <p className="text-[10px] text-white/40 mt-0.5">Xác nhận nhanh, ưu tiên xử lý đơn</p>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
-                {/* QR Code Wireframe Container */}
-                {paymentMethod === 'qr' && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="p-5 rounded-md border border-gold/20 bg-[#16151c]/90 flex flex-col items-center text-center space-y-4"
-                  >
+                {/* QR Code Section */}
+                <div className="p-5 rounded-md border border-gold/20 bg-[#16151c]/90 flex flex-col items-center text-center space-y-4">
                     {!form.phone ? (
                       <div className="p-4 rounded-md border border-amber-500/20 bg-amber-500/5 text-amber-300/80 text-xs flex items-start gap-2 text-left w-full">
                         <AlertTriangle className="h-4 w-4 text-amber-400 shrink-0 mt-0.5" strokeWidth={2} />
@@ -505,8 +456,7 @@ export const OrderPage = () => {
                         </div>
                       </>
                     )}
-                  </motion.div>
-                )}
+                </div>
 
                 {/* Bill details */}
                 <div className="p-4 rounded-md border border-gold/10 bg-gold/5 space-y-2 text-sm">
@@ -550,11 +500,11 @@ export const OrderPage = () => {
                 {/* Submit button */}
                 <button
                   type="submit"
-                  disabled={formStatus === 'submitting' || (paymentMethod === 'qr' && !paymentVerified)}
+                  disabled={formStatus === 'submitting' || !paymentVerified}
                   className="w-full flex h-12 items-center justify-center gap-2 rounded-md bg-gold hover:bg-gold-light text-velvet-black text-sm font-black uppercase tracking-[0.2em] transition-all hover:scale-[1.01] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-40 disabled:scale-100 shadow-[0_0_20px_rgba(198,167,94,0.2)]"
                 >
                   <Send className="h-4 w-4" strokeWidth={2} />
-                  {formStatus === 'submitting' ? 'Đang xử lý...' : paymentMethod === 'qr' ? 'Nhận đơn đặt hàng' : 'Xác nhận đặt hàng'}
+                  {formStatus === 'submitting' ? 'Đang xử lý...' : 'Nhận đơn đặt hàng'}
                 </button>
               </form>
             </div>
