@@ -29,8 +29,8 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
           className="text-lg md:text-2xl text-white/60 mb-10 max-w-2xl mx-auto font-light tracking-wide"
         >
-          Khi cả hội cùng mở bài, người "thua" lại là người vui nhất
-          <span className="block mt-2 font-bold text-gold/80 italic">Thua chỉ là khởi đầu của những thử thách tấu hài gắn kết tình anh em thương mến thương</span>
+          Cùng chơi, cùng vui, cùng khóc, cùng cười
+          <span className="block mt-2 font-bold text-gold/80 italic">Những thử thách tấu hài khó đỡ gắn kết tình anh em thương mến thương thân</span>
         </motion.p>
 
         <motion.div
