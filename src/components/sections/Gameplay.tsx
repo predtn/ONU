@@ -4,6 +4,7 @@ import imgRed from '../../../assets/9_red.png';
 import imgBlue from '../../../assets/9_blue.png';
 import imgBrown from '../../../assets/9_brown.png';
 import imgYellow from '../../../assets/9_yellow.png';
+import { trackInteraction } from '../../utils/analytics';
 
 const cardTypes = [
   { 
@@ -64,6 +65,9 @@ const Gameplay = () => {
   };
 
   const handleDragEnd = (_: any, info: any) => {
+    // Track interaction when user finishes dragging/exploring cards
+    trackInteraction();
+
     const currentRotation = rotation.get();
     const velocity = info.velocity.x;
     

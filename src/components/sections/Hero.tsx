@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Clock } from 'lucide-react';
 import FloatingCards from '../3D/FloatingCards';
+import { trackOrderClick } from '../../utils/analytics';
 
 const DEADLINE = new Date('2026-06-20T23:59:59+07:00').getTime();
 
@@ -87,7 +88,10 @@ const Hero = () => {
           </div>
 
           <button
-            onClick={() => { window.location.hash = '#order'; }}
+            onClick={() => {
+              trackOrderClick();
+              window.location.hash = '#order';
+            }}
             className="group relative px-10 py-4 bg-gold text-velvet-black font-bold tracking-widest text-sm hover:scale-105 transition-all duration-300 rounded-sm overflow-hidden shadow-[0_0_30px_rgba(198,167,94,0.3)]"
           >
             <span className="relative z-10 pointer-events-none">Pre-order chỉ với 150.000 vnđ</span>

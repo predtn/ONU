@@ -12,9 +12,43 @@ import Features from './components/sections/Features';
 import FAQ from './components/sections/FAQ';
 import Footer from './components/sections/Footer';
 import { OrderPage } from './pages/OrderPage';
+import { trackPageView, trackInteraction } from './utils/analytics';
 
 function App() {
   const [isOrderPage, setIsOrderPage] = useState(false);
+
+  useEffect(() => {
+    // Track page view on initial load
+    trackPageView();
+
+    // Listen to screen clicks for interaction tracking (only buttons, links, inputs, and elements with role="button")
+    let lastTrackTime = 0;
+    const handleGlobalClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (!target) return;
+
+      // Check target tagName directly first in case it is immediately unmounted/detached from DOM on click
+      const tagName = target.tagName.toLowerCase();
+      const isDirectInteractive = ['button', 'a', 'input', 'select', 'textarea'].includes(tagName) || 
+                                  target.getAttribute('role') === 'button';
+
+      // Fallback to checking parent elements if it's still attached to DOM (e.g., clicking inside a button)
+      const isInteractive = isDirectInteractive || target.closest('button, a, input, select, textarea, [role="button"]');
+
+      if (isInteractive) {
+        const now = Date.now();
+        if (now - lastTrackTime > 2000) {
+          trackInteraction();
+          lastTrackTime = now;
+        }
+      }
+    };
+
+    window.addEventListener('click', handleGlobalClick);
+    return () => {
+      window.removeEventListener('click', handleGlobalClick);
+    };
+  }, []);
 
   useEffect(() => {
     const handleHashChange = () => {

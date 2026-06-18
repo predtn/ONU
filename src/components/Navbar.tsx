@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { trackOrderClick } from '../utils/analytics';
 
 const Navbar = ({ isOrderPage }: { isOrderPage?: boolean }) => {
   const [activeSection, setActiveSection] = useState<string>('');
@@ -107,6 +108,7 @@ const Navbar = ({ isOrderPage }: { isOrderPage?: boolean }) => {
 
       <button 
         onClick={() => {
+          trackOrderClick();
           window.location.hash = '#order';
         }}
         className="px-6 py-2 border border-gold/30 bg-gold/10 backdrop-blur-md text-gold text-xs md:text-sm uppercase tracking-widest font-bold hover:bg-gold hover:text-velvet-black transition-all duration-500 rounded-full"

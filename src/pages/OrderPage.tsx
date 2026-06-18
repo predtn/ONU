@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ShoppingBag, Send, ShieldCheck, Truck, CreditCard, MessageCircle, Music2, Lock, AlertTriangle, Check, CheckCircle2, XCircle, Clock, Link2 } from 'lucide-react';
 import souldeckOrderImg from '../../assets/souldeck_order.png';
+import { trackActualOrder } from '../utils/analytics';
 
 interface OrderForm {
   fullName: string;
@@ -121,6 +122,9 @@ export const OrderPage = () => {
         },
         body: JSON.stringify(payload),
       });
+
+      // Track successful order event in the tracking sheet
+      await trackActualOrder();
 
       setForm(initialForm);
       setFormStatus('success');

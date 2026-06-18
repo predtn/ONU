@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import { trackInteraction } from '../../utils/analytics';
 
 const faqs = [
   { 
@@ -36,7 +37,10 @@ const FAQ = () => {
           {faqs.map((faq, idx) => (
             <div key={idx} className="border-b border-white/10">
               <button
-                onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
+                onClick={() => {
+                  trackInteraction();
+                  setOpenIdx(openIdx === idx ? null : idx);
+                }}
                 className="w-full py-6 flex justify-between items-center text-left group"
               >
                 <span className={`text-lg md:text-xl font-bold uppercase tracking-widest transition-colors duration-300 ${openIdx === idx ? 'text-gold' : 'text-white/80 group-hover:text-white'}`}>
