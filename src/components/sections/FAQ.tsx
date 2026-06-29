@@ -13,7 +13,7 @@ const faqs = [
     a: "Nguyên combo gồm 68 lá bài Gameplay Deck siêu lầy lội và 32 lá bài Challenge Deck chất lừ, gói gọn trong hộp xịn mịn cứng cáp. Bỏ túi xách hay balo mang đi quẩy pub, đi cafe là hết sảy." 
   },
   { 
-    q: "Pre-order liệu có bị 'bùng' tiền không?", 
+    q: "Order liệu có bị 'bùng' tiền không?", 
     a: "Yên tâm nha, uy tín quý hơn vàng! Hoàn tiền 100% không nói nhiều nếu không giao hàng đúng hẹn. Bạn được chọn thanh toán an toàn qua ngân hàng hoặc ví điện tử." 
   },
   { 

@@ -99,7 +99,7 @@ export const trackPageView = () => sendTrackingEvent({ access: true });
 export const trackInteraction = () => sendTrackingEvent({ clickInteract: true });
 
 /**
- * Track a click on the pre-order button
+ * Track a click on the order button
  */
 export const trackOrderClick = () => sendTrackingEvent({ clickOrder: true });
 

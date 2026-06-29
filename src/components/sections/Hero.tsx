@@ -4,7 +4,7 @@ import { Clock } from 'lucide-react';
 import FloatingCards from '../3D/FloatingCards';
 import { trackOrderClick } from '../../utils/analytics';
 
-const DEADLINE = new Date('2026-06-20T23:59:59+07:00').getTime();
+const DEADLINE = new Date('2026-07-07T23:59:59+07:00').getTime();
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({ days: '00', hours: '00', minutes: '00', seconds: '00' });
@@ -65,7 +65,7 @@ const Hero = () => {
           <div className="flex flex-col items-center mb-3 px-8 py-4 rounded-lg border border-gold/20 bg-[#111016]/95 backdrop-blur-md min-w-[320px]">
             <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.25em] text-white/50 mb-3 flex items-center gap-2 justify-center">
               <Clock className="h-4 w-4 text-gold/75 shrink-0 animate-pulse" strokeWidth={2.5} />
-              Pre-order ưu đãi kết thúc sau
+              Ưu đãi order kết thúc sau
             </p>
             <div className="flex gap-4 justify-center items-center">
               {[
@@ -94,7 +94,7 @@ const Hero = () => {
             }}
             className="group relative px-10 py-4 bg-gold text-velvet-black font-bold tracking-widest text-sm hover:scale-105 transition-all duration-300 rounded-sm overflow-hidden shadow-[0_0_30px_rgba(198,167,94,0.3)]"
           >
-            <span className="relative z-10 pointer-events-none">Pre-order chỉ với 150.000 vnđ</span>
+            <span className="relative z-10 pointer-events-none">Order chỉ với 120.000 vnđ</span>
             <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 pointer-events-none" />
           </button>
           

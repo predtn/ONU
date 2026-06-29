@@ -31,7 +31,7 @@ const BANK_ID = 'VCB'; // E.g., MB, VCB, TCB, ACB, etc.
 const ACCOUNT_NO = '9988103972';
 const ACCOUNT_NAME = 'PHAM TIEN DUNG';
 
-const DEADLINE = new Date('2026-06-20T23:59:59+07:00').getTime();
+const DEADLINE = new Date('2026-07-07T23:59:59+07:00').getTime();
 
 export const OrderPage = () => {
   const [form, setForm] = useState<OrderForm>(initialForm);
@@ -39,7 +39,7 @@ export const OrderPage = () => {
   const [paymentVerified, setPaymentVerified] = useState(false);
   const [checkingPayment, setCheckingPayment] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ days: '00', hours: '00', minutes: '00', seconds: '00' });
-  const unitPrice = 150000;
+  const unitPrice = 120000;
   const originalPrice = 240000;
 
   const isLocked = paymentVerified;
@@ -98,9 +98,9 @@ export const OrderPage = () => {
       totalAmount,
       timestamp: new Date().toISOString(),
       source: 'Web',
-      product: 'SOUL DECK preorder',
+      product: 'SOUL DECK order',
       originalPrice,
-      preorderPrice: unitPrice,
+      discountPrice: unitPrice,
     };
 
     if (!googleScriptUrl) {
@@ -165,7 +165,7 @@ export const OrderPage = () => {
               </div>
 
               <span className="text-xs font-bold uppercase tracking-[0.25em] gold-gradient italic">
-                Pre-order limit
+                Order ưu đãi
               </span>
               <h2 className="text-2xl font-black uppercase tracking-tight text-white mt-1">
                 SOUL DECK
@@ -180,7 +180,7 @@ export const OrderPage = () => {
                   <span className="text-white/40 line-through font-semibold">{originalPrice.toLocaleString('vi-VN')} VND</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gold font-bold uppercase tracking-wider text-xs">Giá pre-order</span>
+                  <span className="text-gold font-bold uppercase tracking-wider text-xs">Giá ưu đãi</span>
                   <span className="text-2xl font-black text-white">{unitPrice.toLocaleString('vi-VN')} VND</span>
                 </div>
               </div>
@@ -470,7 +470,7 @@ export const OrderPage = () => {
                   </div>
                   <div className="flex justify-between items-center text-white/75">
                     <span>Phí vận chuyển</span>
-                    <span className="text-gold italic font-bold">Miễn phí (Pre-order)</span>
+                    <span className="text-gold italic font-bold">Miễn phí (Order)</span>
                   </div>
                   <div className="flex justify-between items-center pt-2 border-t border-gold/20 text-base font-bold text-white">
                     <span>Tổng cộng</span>

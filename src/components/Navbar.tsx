@@ -113,7 +113,7 @@ const Navbar = ({ isOrderPage }: { isOrderPage?: boolean }) => {
         }}
         className="px-6 py-2 border border-gold/30 bg-gold/10 backdrop-blur-md text-gold text-xs md:text-sm uppercase tracking-widest font-bold hover:bg-gold hover:text-velvet-black transition-all duration-500 rounded-full"
       >
-        Pre-Order Now
+        Order Now
       </button>
     </motion.nav>
   );
