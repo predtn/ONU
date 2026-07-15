@@ -31,7 +31,7 @@ const BANK_ID = 'VCB'; // E.g., MB, VCB, TCB, ACB, etc.
 const ACCOUNT_NO = '9988103972';
 const ACCOUNT_NAME = 'PHAM TIEN DUNG';
 
-const DEADLINE = new Date('2026-07-07T23:59:59+07:00').getTime();
+const DEADLINE = new Date('2026-07-29T23:59:59+07:00').getTime();
 
 export const OrderPage = () => {
   const [form, setForm] = useState<OrderForm>(initialForm);
@@ -39,7 +39,7 @@ export const OrderPage = () => {
   const [paymentVerified, setPaymentVerified] = useState(false);
   const [checkingPayment, setCheckingPayment] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ days: '00', hours: '00', minutes: '00', seconds: '00' });
-  const unitPrice = 120000;
+  const unitPrice = 150000;
   const originalPrice = 240000;
 
   const isLocked = paymentVerified;
